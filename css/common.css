@@ -1,0 +1,13 @@
+.odd {
+    background-color: #666;
+    color: #fff;
+}
+
+.even {
+    background-color: #eee;
+    color: #000;
+}
+
+body {
+    background-color: #000;
+}
