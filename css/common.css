@@ -41,12 +41,13 @@ h1.teamName {
 }
 
 .membertile {
+    position: relative;
     background-color: #666;
     color: #fff;
     width: 300px;
     height: 200px;
     cursor: pointer;
-    
+
     -moz-box-shadow: 2px 2px 10px #333;
     -webkit-box-shadow: 2px 2px 10px #333;
     box-shadow: 2px 2px 10px #333;
@@ -57,9 +58,9 @@ h1.teamName {
 }
 
 .membertile .dreamText {
-    position: relative;
-    margin-top: 100px;
-    clear: both;
+    position: absolute;
+    bottom: 0px;
+    width: 300px;
     background-color: #eee;
     color: #DA3A41;
     padding: 10px 10px 10px 10px;
