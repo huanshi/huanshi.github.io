@@ -56,6 +56,15 @@ h1.teamName {
     margin-left: 10px;
 }
 
+.membertile .dreamText {
+    position: relative;
+    margin-top: 100px;
+    clear: both;
+    background-color: #eee;
+    color: #DA3A41;
+    padding: 10px 10px 10px 10px;
+}
+
 .left {
     float: left;
     margin:0 auto;

@@ -27,7 +27,8 @@ define(function (require, exports, module) {
         for ( index = 0; index < members.length; index++ ) {
             memberDiv = document.createElement( "div" );
             memberDiv.innerHTML = Mustache.render( tileTemplate, {
-                "name": members[index].name
+                "name": members[index].name,
+                "dream": members[index].dream
             } );
             if ( index % 2 === 0 ) {
                 leftContainer.appendChild( memberDiv );
