@@ -3,7 +3,9 @@
 
 define(function (require, exports, module) {
     var membersContent = require( "text!../content/member.json" ),
-        members = JSON.parse( membersContent );
+        members = JSON.parse( membersContent ),
+        Mustache = require("lib/mustache"),
+        tileTemplate = require("text!../template/memberTile.html");
     
     /*
      * show all member information
@@ -24,8 +26,9 @@ define(function (require, exports, module) {
         // create member tile with name
         for ( index = 0; index < members.length; index++ ) {
             memberDiv = document.createElement( "div" );
-            memberDiv.className = "membertile";
-            memberDiv.innerHTML = "<h1>" + members[index].name + "</h1>";
+            memberDiv.innerHTML = Mustache.render( tileTemplate, {
+                "name": members[index].name
+            } );
             if ( index % 2 === 0 ) {
                 leftContainer.appendChild( memberDiv );
             } else {
