@@ -9,31 +9,39 @@
 }
 
 body {
-    background-color: #000;
+    background-color: rgb(0, 146, 216);
+    position: absolute;
+    top: -10px;
+    height: 100%;
+    overflow-y: hidden;
 }
 
 .titleContainer {
     float: left;
 }
 
-img.logo {
+.logoImg {
     float: left;
     margin-left: 120px;
-    margin-top: 60px;
-    
+    margin-top: 70px; 
 }
 
 .teamcontainer {
-    background-color: #eee;
-    width: 620px;
-    padding: 10px 20px 20px 20px;
+    background-color: rgb(173, 222, 248);
+    width: 660px;
+    height: 100%;
     float: left;
+    
+    -moz-box-shadow: 2px 2px 10px #333;
+    -webkit-box-shadow: 2px 2px 10px #333;
+    box-shadow: 2px 2px 10px #333;
 }
 
-h1.teamName {
+.teamName {
     white-space: pre;
-    background-color: #999;
-    color: #E13A18;
+    background-color: rgb(0, 93, 172);
+    color: #FFF;
+    margin-top: 40px;
     
     -moz-box-shadow: 2px 2px 10px #333;
     -webkit-box-shadow: 2px 2px 10px #333;
@@ -42,15 +50,17 @@ h1.teamName {
 
 .membertile {
     position: relative;
-    background-color: #666;
+    margin: 10px 10px 10px 10px;
+    background-color: rgb(0, 93, 172);
     color: #fff;
     width: 300px;
     height: 200px;
     cursor: pointer;
+    overflow: hidden;
 
-    -moz-box-shadow: 2px 2px 10px #333;
-    -webkit-box-shadow: 2px 2px 10px #333;
-    box-shadow: 2px 2px 10px #333;
+    -moz-box-shadow: 2px 2px 5px #333;
+    -webkit-box-shadow: 2px 2px 5px #333;
+    box-shadow: 2px 2px 5px #333;
 }
 
 .membertile .memberName {
@@ -59,19 +69,20 @@ h1.teamName {
 
 .membertile .dreamText {
     position: absolute;
-    bottom: 0px;
-    width: 300px;
-    background-color: #eee;
-    color: #DA3A41;
-    padding: 10px 10px 10px 10px;
+    bottom: 4px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 146, 216);
+    color: #fff;
+    font-weight: bold;
 }
 
 .left {
     float: left;
-    margin:0 auto;
+    margin-left: 5px;
 }
 
 .right {
     float: right;
-    margin:0 auto;
+    margin-right: 10px;
 }
