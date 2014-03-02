@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: rgb(0, 146, 216);
+    background-color: rgb(0, 93, 172);
     position: absolute;
     top: -10px;
     height: 100%;
@@ -39,7 +39,7 @@ body {
 
 .teamName {
     white-space: pre;
-    background-color: rgb(0, 93, 172);
+    background-color: rgb(0, 146, 216);
     color: #FFF;
     margin-top: 40px;
     
@@ -65,6 +65,7 @@ body {
 
 .membertile .memberName {
     margin-left: 10px;
+    margin-top: 10px;
 }
 
 .membertile .dreamText {
