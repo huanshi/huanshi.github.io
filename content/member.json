@@ -1,6 +1,7 @@
 [
     {
          "name": "刘礼",
+         "headImg": "",
          "description": [ 
                             "专    业：信息与计算科学 编程语言：C（掌握），C++（掌握）开发工具：vi，Visual Stdio 2010",
                             "操作平台：Linux、windows", 
@@ -13,6 +14,7 @@
 
      {
          "name": "杨松林",
+         "headImg": "",
          "description": [
                             "熟悉C++，略通汇编 ", 
                             "在windows平台上使用vs2010开发",
@@ -23,6 +25,7 @@
 
      {
          "name": "郭天瑞",
+         "headImg": "",
          "description": [
                             "爱编程, 爱photoshop, 喜欢街球却是宅神 ",
                             "爱电影更爱游戏, 爱C++更爱独立游戏开发 ",
@@ -38,6 +41,7 @@
 
      {
          "name": "林强",
+         "headImg": "",
          "description": [
                             "专    业：电子信息工程(技术) ",
                             "编程语言：C和 C++语言 ",
@@ -50,6 +54,7 @@
 
      {
          "name": "来一",
+         "headImg": "",
          "description": [
                             "半路出家程序猿，只会c++，正在学python ", 
                             "爱好吃喝玩乐 梦想躺着挣钱 ",
@@ -60,6 +65,7 @@
 
      {
          "name": "林伟",
+         "headImg": "img/linwei-small.png",
          "description": [
                             "从【电子商务】出发，却从【信息安全】走出 ", 
                             "遍历于 VF, VB, C, ASM, BAT, C++, JAVA, Python, C#, Javascript ",
