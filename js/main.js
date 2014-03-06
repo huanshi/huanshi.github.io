@@ -43,6 +43,13 @@ define(function (require, exports, module) {
         teamContainer.appendChild( rightContainer );
     }
     
+    function clearTeamContainer() {
+        var teamContainer = document.getElementById( "team" );
+        while ( teamContainer.firstChild ) {
+            teamContainer.removeChild(teamContainer.firstChild);
+        }
+    }
+    
     function welcome() {
         var teamContainer = document.getElementById( "team" ),
             displayDiv = document.createElement( "div" ),
@@ -64,7 +71,10 @@ define(function (require, exports, module) {
         } )
         teamContainer.appendChild(waiterDiv);
         
-//        waiterDiv.getElementsByTagName("img").addEventListener();
+        waiterDiv.getElementsByTagName("img")[0].addEventListener('click', function () {
+            clearTeamContainer();
+            displayAllMember();
+        } );
         
         timer = setInterval( function () {
             if ( displayDiv.innerHTML.length < displayContent.length ) {
@@ -75,6 +85,8 @@ define(function (require, exports, module) {
             }
         }, 200);
     }
+    
+    
     
     
     welcome();

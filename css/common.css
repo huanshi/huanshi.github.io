@@ -137,3 +137,7 @@ body {
     border-color: rgb(0, 93, 172) transparent transparent transparent;
 }
 
+.waiterImg {
+    cursor: pointer;
+}
+
