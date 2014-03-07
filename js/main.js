@@ -1,12 +1,15 @@
 
-/* global define, alert, document */
+/* global define, alert, document, setInterval, clearInterval */
 
 define(function (require, exports, module) {
     var membersContent = require( "text!../content/member.json" ),
         members = JSON.parse( membersContent ),
+        activityContent = require( "text!../content/activity.json" ),
+        activities = JSON.parse( activityContent ),
         Mustache = require("lib/mustache"),
         tileTemplate = require("text!../template/memberTile.html"),
-        waiterTemplate = require( "text!../template/waiterThumb.html" );
+        waiterTemplate = require( "text!../template/waiterThumb.html" ),
+        activityTemplate = require( "text!../template/activity.html" );
     
     /*
      * show all member information
@@ -43,6 +46,27 @@ define(function (require, exports, module) {
         teamContainer.appendChild( rightContainer );
     }
     
+    /**
+     * render all activities
+     */
+    function renderActivities() {
+        var activityContainer = document.getElementById( "activity" ),
+            activityDiv = null;
+        
+        activities.forEach( function( activity, index ) {
+            activityDiv = document.createElement( "div" );
+            activityDiv.innerHTML = Mustache.render( activityTemplate, {
+                dateTime: activity.dateTime,
+                AMName: activity.AMName,
+                AMDetail: activity.AMDetail,
+                PMName: activity.PMName,
+                PMDetail: activity.PMDetail
+            } );
+            
+            activityContainer.appendChild(activityDiv);
+        } );
+    }
+    
     function clearTeamContainer() {
         var teamContainer = document.getElementById( "team" );
         while ( teamContainer.firstChild ) {
@@ -60,6 +84,8 @@ define(function (require, exports, module) {
                             "不同的专业，不同的学校，但都热衷于技术。更多信息有待你的进一步了解，有什么需要请猛戳我!",
             timer;
         
+        renderActivities();
+        
         displayDiv.className = "welcomeText shadow";
         teamContainer.appendChild( displayDiv );
         
@@ -68,7 +94,7 @@ define(function (require, exports, module) {
         
         waiterDiv.innerHTML = Mustache.render( waiterTemplate, {
             "url": members[5].headImg
-        } )
+        } );
         teamContainer.appendChild(waiterDiv);
         
 
@@ -81,6 +107,7 @@ define(function (require, exports, module) {
                 waiterDiv.getElementsByTagName("img")[0].addEventListener('click', function () {
                     clearTeamContainer();
                     displayAllMember();
+//                    renderActivities();
                 } );
             }
         }, 200);
