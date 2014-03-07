@@ -71,17 +71,17 @@ define(function (require, exports, module) {
         } )
         teamContainer.appendChild(waiterDiv);
         
-        waiterDiv.getElementsByTagName("img")[0].addEventListener('click', function () {
-            clearTeamContainer();
-            displayAllMember();
-        } );
-        
+
         timer = setInterval( function () {
             if ( displayDiv.innerHTML.length < displayContent.length ) {
                 displayDiv.innerHTML = displayDiv.innerHTML + 
                     displayContent.substr(displayDiv.innerHTML.length, 1);
             } else {
                 clearInterval(timer);
+                waiterDiv.getElementsByTagName("img")[0].addEventListener('click', function () {
+                    clearTeamContainer();
+                    displayAllMember();
+                } );
             }
         }, 200);
     }
