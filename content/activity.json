@@ -4,7 +4,7 @@
         "AMName": "TDD游戏回顾",
         "AMDetail": "针对上一次团队TDD游戏的进行情况，进行回顾，涉及相互评价，探讨团队协作等问题。",
         "PMName": "结对TDD比赛",
-        "PMDetail": "基于上一次的TDD游戏基础上，进一步进行TDD练习，增加自己的知识，培养协作。题目待定。"
+        "PMDetail": "基于上一次的TDD游戏基础上，进一步进行TDD练习，增加自己的知识，培养协作。题目参见http://codingdojo.org/cgi-bin/index.pl?KataReversi。"
     }
     
 ]
