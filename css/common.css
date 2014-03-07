@@ -41,9 +41,9 @@ body {
 
 /* shadow */
 .shadow {
-    -moz-box-shadow: 2px 2px 10px #333;
-    -webkit-box-shadow: 2px 2px 10px #333;
-    box-shadow: 2px 2px 10px #333;
+    -moz-box-shadow: 2px 2px 5px #333;
+    -webkit-box-shadow: 2px 2px 5px #333;
+    box-shadow: 2px 2px 5px #333;
 }
 
 .shadowDown {
@@ -97,10 +97,21 @@ body {
 }
 
 .membertile .memberName {
-    position: absolute;
+    position: relative;
     margin-left: 10px;
-    margin-top: 10px;
-    right: 10px;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFF;
+}
+
+.membertile .detail {
+    padding: 10px;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Tahoma, Arial, "微软雅黑", sans-serif;
+    color: #000;
 }
 
 .membertile .dreamText {
@@ -114,9 +125,11 @@ body {
 }
 
 .membertile .headImg {
-    position: absolute;
+    position: relative;
+    float: left;
     top: 2px;
     left: 2px;
+    margin-right: 10px;
 }
 
 .left {

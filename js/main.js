@@ -9,7 +9,9 @@ define(function (require, exports, module) {
         Mustache = require("lib/mustache"),
         tileTemplate = require("text!../template/memberTile.html"),
         waiterTemplate = require( "text!../template/waiterThumb.html" ),
-        activityTemplate = require( "text!../template/activity.html" );
+        activityTemplate = require( "text!../template/activity.html" ),
+        Q = require( "lib/q.min" ),
+        waiterDiv = null;
     
     /*
      * show all member information
@@ -31,9 +33,10 @@ define(function (require, exports, module) {
         for ( index = 0; index < members.length; index++ ) {
             memberDiv = document.createElement( "div" );
             memberDiv.innerHTML = Mustache.render( tileTemplate, {
-                "name": members[index].name,
-                "dream": members[index].dream,
-                "headImg": members[index].headImg
+                name: members[index].name,
+                detail: members[index].description.join(),
+                dream: members[index].dream,
+                headImg: members[index].headImg
             } );
             if ( index % 2 === 0 ) {
                 leftContainer.appendChild( memberDiv );
@@ -75,28 +78,27 @@ define(function (require, exports, module) {
     }
     
     function welcome() {
-        var teamContainer = document.getElementById( "team" ),
+        var deferred = Q.defer(),
+            teamContainer = document.getElementById( "team" ),
             displayDiv = document.createElement( "div" ),
             triangleDiv = document.createElement( "div" ),
-            waiterDiv = document.createElement( "div" ),
             displayContent = "欢迎进入幻实Family！ 我是今天的接待：小林，很高兴能为展示我们团队！ 团队成立于2012" +
                             "年底，秉承成就幻想，缔造真实的理念，逐步组建成现在的大家庭。家庭成员来自四面八方，" +
                             "不同的专业，不同的学校，但都热衷于技术。更多信息有待你的进一步了解，有什么需要请猛戳我!",
             timer;
         
-        renderActivities();
-        
+        waiterDiv = document.createElement( "div" ),
         displayDiv.className = "welcomeText shadow";
         teamContainer.appendChild( displayDiv );
-        
+
         triangleDiv.className = "triangle dialogBoxTrianglePos";
         teamContainer.appendChild( triangleDiv );
-        
+
         waiterDiv.innerHTML = Mustache.render( waiterTemplate, {
-            "url": members[5].headImg
+            url: members[5].headImg
         } );
         teamContainer.appendChild(waiterDiv);
-        
+
 
         timer = setInterval( function () {
             if ( displayDiv.innerHTML.length < displayContent.length ) {
@@ -104,17 +106,20 @@ define(function (require, exports, module) {
                     displayContent.substr(displayDiv.innerHTML.length, 1);
             } else {
                 clearInterval(timer);
-                waiterDiv.getElementsByTagName("img")[0].addEventListener('click', function () {
-                    clearTeamContainer();
-                    displayAllMember();
-//                    renderActivities();
-                } );
+                deferred.resolve();
             }
-        }, 200);
+        }, 100);
+        
+        return deferred.promise;
     }
     
+    // welcome
+    welcome().then( function() {
+        waiterDiv.getElementsByTagName("img")[0].addEventListener('click', function () {
+            clearTeamContainer();
+            displayAllMember();
+        } );
+    } );
     
-    
-    
-    welcome();
+    renderActivities();
 } );
