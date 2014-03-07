@@ -1,11 +1,27 @@
-.odd {
-    background-color: #666;
-    color: #fff;
+/* scroll bar */
+::-webkit-scrollbar { 
+    position: absolute;
+    width: 15px; 
+    height: 15px; 
+    background-color: rgb(0, 93, 172);
+    border: none;
 }
 
-.even {
-    background-color: #eee;
-    color: #000;
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 123, 202); 
+    border: 1px solid rgb(0, 133, 222);
+    border-radius: 80px;
+}
+
+::-webkit-scrollbar-track-piece {
+    border: none; 
+    position: absolute; 
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: none; 
+    background-color: rgba(0, 63, 152, 0.7); 
+    border-radius: 80px;
 }
 
 body {
@@ -17,6 +33,13 @@ body {
     overflow-x: visible;
 }
 
+.logoImg {
+    float: left;
+    margin-left: 120px;
+    margin-top: 70px; 
+}
+
+/* shadow */
 .shadow {
     -moz-box-shadow: 2px 2px 10px #333;
     -webkit-box-shadow: 2px 2px 10px #333;
@@ -29,6 +52,7 @@ body {
     box-shadow: 0px 2px 5px #333;
 }
 
+/* title container */
 .titleContainer {
     position: relative;
     float: left;
@@ -51,12 +75,7 @@ body {
     font-weight: 700;
 }
 
-.logoImg {
-    float: left;
-    margin-left: 120px;
-    margin-top: 70px; 
-}
-
+/* team board style */
 .teamcontainer {
     position: relative;
     background-color: rgb(173, 222, 248);
@@ -64,17 +83,6 @@ body {
     height: 100%;
     float: left;
     z-index: 2;
-}
-
-.activityContainer {
-    position: relative;
-    margin-left: 20px;
-    background-color: rgb(173, 222, 248);
-    width: 300px;
-    height: 100%;
-    float: left;
-    z-index: 3;
-    overflow: hidden;
 }
 
 .membertile {
@@ -121,6 +129,7 @@ body {
     margin-right: 10px;
 }
 
+/* welcome board style */
 .waiter {
     position: relative;
     left: 500px;
@@ -157,6 +166,18 @@ body {
 
 .waiterImg {
     cursor: pointer;
+}
+
+/* activity board style */
+.activityContainer {
+    position: relative;
+    margin-left: 20px;
+    background-color: rgb(173, 222, 248);
+    width: 300px;
+    height: 100%;
+    float: left;
+    z-index: 3;
+    overflow: hidden;
 }
 
 .activityContainer .title {
