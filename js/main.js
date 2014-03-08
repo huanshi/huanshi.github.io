@@ -34,10 +34,16 @@ define(function (require, exports, module) {
             memberDiv = document.createElement( "div" );
             memberDiv.innerHTML = Mustache.render( tileTemplate, {
                 name: members[index].name,
+                score: members[index].score,
                 detail: members[index].description.join(),
                 dream: members[index].dream,
                 headImg: members[index].headImg
             } );
+            
+            if ( members[index].score.trim().length === 0 ) {
+                memberDiv.getElementsByClassName( "scoreTag" )[0].style.display = "none";
+            }
+            
             if ( index % 2 === 0 ) {
                 leftContainer.appendChild( memberDiv );
             } else {

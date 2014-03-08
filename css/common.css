@@ -143,6 +143,20 @@ header {
     margin-right: 10px;
 }
 
+.membertile .scoreTag {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: #f40;
+    color: #fff;
+    height: 20px;
+    width: 20px;
+    text-align: center; 
+    align-content: 0;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
 .left {
     float: left;
     margin-left: 5px;
