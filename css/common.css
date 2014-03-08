@@ -31,6 +31,7 @@ body {
     height: 100%;
     overflow-y: hidden;
     overflow-x: visible;
+    overflow-x: auto;
 }
 
 .logoImg {
@@ -189,7 +190,8 @@ body {
 
 /* activity board style */
 .activityContainer {
-    position: relative;
+    position: absolute;
+    left: 1000px;
     margin-left: 20px;
     background-color: rgb(173, 222, 248);
     width: 300px;
