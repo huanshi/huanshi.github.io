@@ -11,8 +11,8 @@
         "dateTime": "2014-03-15",
         "AMName": "《程序员的职业素养》读书学习会",
         "AMDetail": "各抒己见，讨论一下团队成员认可的职业素养，以此为准则。",
-        "PMName": "Reversi 演进 / 其他自报活动",
-        "PMDetail": "基于Reversi继续进行演进，最终完成黑白棋对弈功能。题目参见http://codingdojo.org/cgi-bin/index.pl?KataReversi。"
+        "PMName": "Reversi 演进",
+        "PMDetail": "基于Reversi继续进行演进，最终完成黑白棋对弈功能。题目参见http://codingdojo.org/cgi-bin/index.pl?KataReversi。 两次活动的代码参见：https://github.com/huanshi/CodeKata"
     }
     
 ]
