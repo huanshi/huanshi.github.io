@@ -13,6 +13,14 @@
         "AMDetail": "各抒己见，讨论一下团队成员认可的职业素养，以此为准则。",
         "PMName": "Reversi 演进",
         "PMDetail": "基于Reversi继续进行演进，最终完成黑白棋对弈功能。题目参见http://codingdojo.org/cgi-bin/index.pl?KataReversi。 两次活动的代码参见：https://github.com/huanshi/CodeKata"
+    },
+    
+    {
+        "dateTime": "2014-03-22",
+        "AMName": "来一转正答辩",
+        "AMDetail": "所有人都需要参与，并进行评价。",
+        "PMName": "AssassinWar实现",
+        "PMDetail": "这是郭天瑞提出的方案，大家同意进行的游戏，带着兴趣进行学习，预备知识是HTML/JS.先对该游戏方案进行讲解，需求分析讨论，分工协作进行，最后讨论相关问题。"
     }
     
 ]
