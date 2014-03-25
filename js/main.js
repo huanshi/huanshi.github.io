@@ -61,6 +61,7 @@ define(function (require, exports, module) {
     function renderActivities() {
         var activityContainer = document.getElementById( "activity" ),
             activityDiv = null;
+        
         activities = activities.reverse();
         activities.forEach( function( activity, index ) {
             activityDiv = document.createElement( "div" );

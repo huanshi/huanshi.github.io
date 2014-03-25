@@ -2,7 +2,7 @@
 
 ::-webkit-scrollbar {
     position: absolute;
-    width: 15px;
+    width: 10px;
     height: 15px;
     background-color: rgb(0, 93, 172);
     border: none;
@@ -16,8 +16,11 @@
     border: none;
     position: absolute;
     padding: 10px;
+    margin: 20px;
+/*
     margin-left: 20px;
     margin-right: 20px;
+*/
     box-shadow: none;
     background-color: rgba(0, 63, 152, 0.7);
     border-radius: 80px;
@@ -25,7 +28,7 @@
 body {
     background-color: rgb(0, 93, 172);
     position: absolute;
-    top: -10px;
+    margin: 0;
     height: 100%;
     width: auto;
     overflow: hidden;
@@ -73,6 +76,16 @@ header {
     font-size: 20;
     font-weight: 700;
 }
+
+.titleContainer .recruit {
+    position: absolute;
+    top: 24px;
+    right: 8px;
+    color: #fff;
+    font-size: 20;
+    font-weight: 700;
+}
+
 a {
     color: #fff;
     font-size: 20;
@@ -215,7 +228,8 @@ a {
     height: 100%;
     float: left;
     z-index: 3;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .activityContainer .title {
     /*    background-color: rgb(0, 146, 216);*/
@@ -226,6 +240,9 @@ a {
     padding: 6px;
     font-size: 20px;
     font-weight: 700;
+    
+    word-wrap: break-word; 
+    word-break: normal; 
 }
 .activityContainer .activityItem {
     position: relative;
@@ -235,6 +252,8 @@ a {
     font-weight: 600;
     padding: 10px;
     border-left: 4px solid #00FFFF;
+    word-wrap: break-word; 
+    word-break: normal; 
 }
 .activityItem .padding {
     padding: 5px 0px 0px 0px;
