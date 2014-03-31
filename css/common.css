@@ -31,7 +31,8 @@ body {
     margin: 0;
     height: 100%;
     width: auto;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 header {
     margin: 0 -9999px;
@@ -220,9 +221,8 @@ a {
 /* activity board style */
 
 .activityContainer {
-    position: absolute;
-    left: 880px;
-    margin-left: 20px;
+    position:relative;
+    margin-left: 4px;
     background-color: rgb(173, 222, 248);
     width: 300px;
     height: 100%;
