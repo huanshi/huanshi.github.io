@@ -29,6 +29,20 @@
         "AMDetail": "学习第一章和第二章节内容。",
         "PMName": "Assassin War重构和开发",
         "PMDetail": "先把上周的代码进行分析和学习，然后重构，再进行后续开发。"
+    },
+    {
+        "dateTime": "2014-04-19",
+        "AMName": "CleanCode读书学习-强",
+        "AMDetail": "学习第三章函数的内容，由强主讲。函数抽象，命名，代码整理等学习。",
+        "PMName": "Assassin War重构和开发",
+        "PMDetail": "对AW的main.js的joingame函数进行重构，添加了登录首页界面。"
+    },
+    {
+        "dateTime": "2014-04-26",
+        "AMName": "测控相关理论知识学习——Tang",
+        "AMDetail": "测控理论知识学习，信号，转换等基本原理",
+        "PMName": "CleanCode第四章学习-TyrealGray Assassin War重构和开发",
+        "PMDetail": "CleanCode第四章注释学习，由TyrealGray主讲，之后对AW的main.js代码进行重构。"
     }
     
 ]
