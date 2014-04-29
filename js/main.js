@@ -26,6 +26,7 @@ define(function (require, exports, module) {
             memberDiv = document.createElement( "div" );
             memberDiv.innerHTML = Mustache.render( tileTemplate, {
                 name: members[index].name,
+                github: members[index].github,
                 score: members[index].score,
                 detail: members[index].description.join(),
                 dream: members[index].dream,
@@ -38,14 +39,9 @@ define(function (require, exports, module) {
 
             var headImgClassName = memberDiv.getElementsByClassName( "headImg" )[0].className;
             if (index % 2 === 1){
-                memberDiv.getElementsByClassName( "memberName" )[0].className = "memberName right";
-                headImgClassName = headImgClassName.replace('headImg', 'headImg right');
-                memberDiv.getElementsByClassName( "headImg" )[0].className = headImgClassName;
-                
+                memberDiv.getElementsByClassName( "header" )[0].className = "header right";
             } else {
-                memberDiv.getElementsByClassName( "memberName" )[0].className = "memberName left";
-                headImgClassName = headImgClassName.replace('headImg', 'headImg left');
-                memberDiv.getElementsByClassName( "headImg" )[0].className = headImgClassName;
+                memberDiv.getElementsByClassName( "header" )[0].className = "header left";
             }
 
             teamContainer.appendChild( memberDiv );
@@ -130,3 +126,9 @@ define(function (require, exports, module) {
     
     renderActivities();
 } );
+
+
+
+
+
+

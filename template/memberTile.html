@@ -1,9 +1,14 @@
 <div class="membertile shadow">
-    <img src="{{headImg}}" class="headImg shadow roundCorner"/>
+    <div class="header">
+        <img src="{{headImg}}" class="headImg shadow roundCorner"/>
+        <span class="memberName">{{name}} </span>
+    </div>
     <div class="scoreTag outerGlow">{{score}}</div>
     <div class="detail">
-        <span class="memberName">{{name}} </span>
         {{detail}}
+        <br>
+        {{#github}}<a class="githubCode" target="_blank" href="{{github.url}}">`Github: {{github.name}}`</a>{{/github}}
+        {{^github}}<a class="githubCode" href="#">`Github: unknown`</a>{{/github}}
     </div>
     <div class="dreamText outerGlow">梦想：{{dream}}</div>
 </div>

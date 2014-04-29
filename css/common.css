@@ -32,8 +32,8 @@ body {
 
 .bigBox {
     margin:0 auto;
-    min-width: 800px;
-    max-width: 800px;
+    min-width: 900px;
+    max-width: 900px;
 }
 
 .logoImg {
@@ -81,6 +81,11 @@ a {
     cursor: pointer;
     text-decoration: none;
 }
+
+.githubCode {
+    font-size: 15;
+}
+
 .game {
     position: absolute;
     top: 20px;
@@ -112,7 +117,7 @@ a {
 .teamcontainer {
     position: absolute;
     background-color: rgb(173, 222, 248);
-    width: 490px;
+    width: 590px;
     height: 100%;
     float: left;
     z-index: 2;
@@ -124,9 +129,15 @@ a {
     background-color: rgb(0, 146, 216);
     color: #fff;
     height: 240px;
-    cursor: pointer;
+    /*cursor: pointer;*/
     overflow: hidden;
 }
+
+.header {
+    position: relative;
+    text-align: center;
+}
+
 .membertile .memberName {
     position: relative;
     margin-left: 10px;
@@ -134,6 +145,8 @@ a {
     font-weight: 600;
     font-size: 20px;
     color: #FFF;
+    padding-top: 5px;
+    display: inline-block;
 }
 
 .left {
@@ -167,6 +180,7 @@ a {
     top: 2px;
     left: 2px;
     margin-right: 10px;
+    display: block;
 }
 .membertile .scoreTag {
     position: absolute;
@@ -186,7 +200,7 @@ a {
 
 .waiter {
     position: relative;
-    left: 300px;
+    left: 360px;
     top: 0;
     width: 100px;
 }
@@ -203,10 +217,10 @@ a {
     margin-left: 20px;
     margin-top: 100px;
     line-height: 30px;
-    width: 440px;
+    width: 530px;
 }
 .dialogBoxTrianglePos {
-    margin-left: 330px;
+    margin-left: 400px;
 }
 .triangle {
     width: 0;

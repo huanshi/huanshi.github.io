@@ -1,7 +1,7 @@
 [
     {
          "name": "刘礼",
-         "headImg": "",
+         "headImg": "img/default.png",
          "description": [ 
                             "专    业：信息与计算科学 编程语言：C（掌握），C++（掌握）开发工具：vi，Visual Stdio 2010",
                             "操作平台：Linux、windows", 
@@ -16,7 +16,7 @@
 
      {
          "name": "杨松林",
-         "headImg": "",
+         "headImg": "img/default.png",
          "description": [
                             "熟悉C++，略通汇编 ", 
                             "在windows平台上使用vs2010开发",
@@ -29,7 +29,7 @@
 
      {
          "name": "郭天瑞",
-         "headImg": "",
+         "headImg": "img/default.png",
          "description": [
                             "爱编程, 爱photoshop, 喜欢街球却是宅神 ",
                             "爱电影更爱游戏, 爱C++更爱独立游戏开发 ",
@@ -40,6 +40,10 @@
                             "不是程序员,是程序猿 ",
                             "我是郭天瑞,我为自己带盐 "
                         ],
+         "github": {
+             "name": "TyrealGray",
+             "url": "https://github.com/TyrealGray"
+         },
          "score": "",
          "records": [ "" ],
          "dream": "开发出一款沙盒小游戏"
@@ -47,7 +51,7 @@
 
      {
          "name": "林强",
-         "headImg": "",
+         "headImg": "img/default.png",
          "description": [
                             "专    业：电子信息工程(技术) ",
                             "编程语言：C和 C++语言 ",
@@ -62,12 +66,16 @@
 
      {
          "name": "来一",
-         "headImg": "",
+         "headImg": "img/default.png",
          "description": [
                             "半路出家程序猿，只会c++，正在学python ", 
                             "爱好吃喝玩乐 梦想躺着挣钱 ",
                             "别叫我一哥，其实我有点2 "
                         ],
+         "github": {
+             "name": "flymianmian",
+             "url": "https://github.com/flymianmian"
+         },
          "score": "+1",
          "records": [
                         "+1 2014-03-04 TDD游戏 在游戏中做出的努力和贡献获得大家的认可。 "
@@ -89,15 +97,18 @@
                             "闲暇之余, 游离于开源代码和羽毛球之间 ",
                             "三朋四友，诸多欢乐"
                         ],
+         "github": {
+             "name": "anzhihun",
+             "url": "https://github.com/anzhihun"
+         },
          "score": "",
          "records": [ "" ],
          "dream": "和一帮兄弟，干一些有意义的事"
-     }
-    ,
+     },
 
      {
          "name": "曹燕",
-         "headImg": "",
+         "headImg": "img/default.png",
          "description": [   
                             "专    业：电子商务 编程语言：java（掌握）",
                             "操作平台：windows ", 
@@ -105,6 +116,10 @@
                             "兴趣爱好：和朋友聚在一起聊天, 玩耍 ", 
                             "专    长：学习新的事物 "
                         ],
+         "github": {
+             "name": "caocaoer",
+             "url": "https://github.com/caocaoer"
+         },
          "score": "",
          "records": [ "" ],
          "dream": "成为一名出色的架构师"
