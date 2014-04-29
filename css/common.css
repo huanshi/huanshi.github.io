@@ -17,32 +17,29 @@
     position: absolute;
     padding: 10px;
     margin: 20px;
-/*
-    margin-left: 20px;
-    margin-right: 20px;
-*/
     box-shadow: none;
     background-color: rgba(0, 63, 152, 0.7);
     border-radius: 80px;
 }
 body {
     background-color: rgb(0, 93, 172);
-    position: absolute;
     margin: 0;
     height: 100%;
-    width: auto;
+    width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
 }
-header {
-    margin: 0 -9999px;
-    padding: 0 9999px;
+
+.bigBox {
+    margin:0 auto;
+    min-width: 800px;
+    max-width: 800px;
 }
 
 .logoImg {
     float: left;
-    margin-left: 100px;
-    margin-top: 70px;
+    margin-left: 40px;
+    margin-top: 20px;
     padding-bottom: 20px;
 }
 /* shadow */
@@ -66,21 +63,21 @@ header {
 
 .titleContainer {
     position: relative;
-    float: left;
     z-index: 1;
-    max-width: 250px;
 }
 .titleContainer .banner {
     position: absolute;
     right: 2px;
     color: #fff;
     font-size: 20;
+    float: left;
     font-weight: 700;
+    top: 70px;
 }
 
 .titleContainer .recruit {
     position: absolute;
-    top: 24px;
+    top: 20px;
     right: 8px;
     color: #fff;
     font-size: 20;
@@ -99,33 +96,39 @@ a {
     color: #fff;
 }
 .titleContainer .teamName {
-/*    position: relative;*/
     background-color: rgb(0, 146, 216);
     color: #FFF;
-    margin-top: 60px;
+    margin-top: 10px;
     padding-top: 20px;
-    padding-left: 100px;
+    padding-left: 130px;
     padding-right: 20px;
     padding-bottom: 10px;
-    min-width: 100px;
     font-weight: 700;
 }
+
+
+.contentContainer {
+    margin-top: -10px;
+}
+
+
+
 /* team board style */
 
 .teamcontainer {
-    position: relative;
+    position: absolute;
     background-color: rgb(173, 222, 248);
-    width: 660px;
+    width: 490px;
     height: 100%;
     float: left;
     z-index: 2;
+    overflow-y: auto;
 }
 .membertile {
     position: relative;
     margin: 10px 10px 10px 10px;
     background-color: rgb(0, 146, 216);
     color: #fff;
-    width: 300px;
     height: 200px;
     cursor: pointer;
     overflow: hidden;
@@ -138,7 +141,17 @@ a {
     font-size: 20px;
     color: #FFF;
 }
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
 .membertile .detail {
+    position: relative;
     padding: 10px;
     line-height: 26px;
     font-size: 16px;
@@ -157,7 +170,6 @@ a {
 }
 .membertile .headImg {
     position: relative;
-    float: left;
     top: 2px;
     left: 2px;
     margin-right: 10px;
@@ -175,25 +187,17 @@ a {
     border-radius: 30px;
     font-weight: 600;
 }
-.left {
-    float: left;
-    margin-left: 5px;
-}
-.right {
-    float: right;
-    margin-right: 10px;
-}
+
 /* welcome board style */
 
 .waiter {
     position: relative;
-    left: 500px;
+    left: 300px;
     top: 0;
 }
 .roundCorner {
-    -moz-border-radius: 15px;
-    /* Old Firefox */
-    border-radius: 15px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
 }
 .welcomeText {
     background-color: rgb(0, 93, 172);
@@ -206,7 +210,7 @@ a {
     line-height: 30px;
 }
 .dialogBoxTrianglePos {
-    margin-left: 520px;
+    margin-left: 330px;
 }
 .triangle {
     width: 0;
@@ -226,13 +230,12 @@ a {
     background-color: rgb(173, 222, 248);
     width: 300px;
     height: 100%;
-    float: left;
+    float: right;
     z-index: 3;
     overflow-x: hidden;
     overflow-y: auto;
 }
 .activityContainer .title {
-    /*    background-color: rgb(0, 146, 216);*/
     background-color: rgb(0, 93, 172);
     color: #fff;
     width: 100%;
@@ -240,7 +243,6 @@ a {
     padding: 6px;
     font-size: 20px;
     font-weight: 700;
-    
     word-wrap: break-word; 
     word-break: normal; 
 }

@@ -30,6 +30,7 @@
         "PMName": "Assassin War重构和开发",
         "PMDetail": "先把上周的代码进行分析和学习，然后重构，再进行后续开发。"
     },
+    
     {
         "dateTime": "2014-04-19",
         "AMName": "CleanCode读书学习-强",
@@ -37,6 +38,7 @@
         "PMName": "Assassin War重构和开发",
         "PMDetail": "对AW的main.js的joingame函数进行重构，添加了登录首页界面。"
     },
+    
     {
         "dateTime": "2014-04-26",
         "AMName": "测控相关理论知识学习——Tang",

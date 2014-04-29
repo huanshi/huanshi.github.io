@@ -19,15 +19,7 @@ define(function (require, exports, module) {
     function displayAllMember() {
         var teamContainer = document.getElementById( "team" ),
             index = 0,
-            memberDiv = null,
-            leftContainer = null,
-            rightContainer = null;
-        
-        leftContainer = document.createElement( "div" );
-        leftContainer.className = "left";
-        rightContainer = document.createElement( "div" );
-        rightContainer.className = "right";
-        
+            memberDiv = null;
         
         // create member tile with name
         for ( index = 0; index < members.length; index++ ) {
@@ -43,16 +35,21 @@ define(function (require, exports, module) {
             if ( members[index].score.trim().length === 0 ) {
                 memberDiv.getElementsByClassName( "scoreTag" )[0].style.display = "none";
             }
-            
-            if ( index % 2 === 0 ) {
-                leftContainer.appendChild( memberDiv );
+
+            var headImgClassName = memberDiv.getElementsByClassName( "headImg" )[0].className;
+            if (index % 2 === 1){
+                memberDiv.getElementsByClassName( "memberName" )[0].className = "memberName right";
+                headImgClassName = headImgClassName.replace('headImg', 'headImg right');
+                memberDiv.getElementsByClassName( "headImg" )[0].className = headImgClassName;
+                
             } else {
-                rightContainer.appendChild( memberDiv );
+                memberDiv.getElementsByClassName( "memberName" )[0].className = "memberName left";
+                headImgClassName = headImgClassName.replace('headImg', 'headImg left');
+                memberDiv.getElementsByClassName( "headImg" )[0].className = headImgClassName;
             }
+
+            teamContainer.appendChild( memberDiv );
         }
-        
-        teamContainer.appendChild( leftContainer );
-        teamContainer.appendChild( rightContainer );
     }
     
     /**
@@ -94,7 +91,7 @@ define(function (require, exports, module) {
                             "不同的专业，不同的学校，但都热衷于技术。更多信息有待你的进一步了解，有什么需要请猛戳我!",
             timer;
         
-        waiterDiv = document.createElement( "div" ),
+        waiterDiv = document.createElement( "div" );
         displayDiv.className = "welcomeText shadow";
         teamContainer.appendChild( displayDiv );
 
@@ -117,15 +114,18 @@ define(function (require, exports, module) {
             }
         }, 100);
         
-        return deferred.promise;
-    }
-    
-    // welcome
-    welcome().then( function() {
         waiterDiv.getElementsByTagName("img")[0].addEventListener('click', function () {
             clearTeamContainer();
             displayAllMember();
         } );
+        
+        return deferred.promise;
+    }
+    
+    
+    
+    // welcome
+    welcome().then( function() {
     } );
     
     renderActivities();
