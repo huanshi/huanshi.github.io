@@ -1,34 +1,41 @@
+
 <div class="activityItem">
-    <div unselectable="on" class="round timelineShadow">
-        {{dateTime.time}}
+    <div class="leftItem">
+        <div class="timeline timelineShadow"> </div>
+        <div unselectable="on" class="round timelineShadow">
+            {{dateTime.time}}
+        </div>
     </div>
-<!--
-    <div>
-        日期：{{dateTime}}
-    </div>
--->
-    <p></p>
-    <div> 
+    <div class="rightItem">
+        <div class="baseLine"></div>
+    <!--
         <div>
-            AM：
-            {{AMName}}
+            日期：{{dateTime}}
         </div>
-<!--
-        <div class="padding">
-            {{{AMDetail}}}
+    -->
+        <p></p>
+        <div> 
+            <div>
+                AM：{{AMName}}
+            </div>
+    <!--
+            <div class="padding">
+                {{{AMDetail}}}
+            </div>
+    -->
         </div>
--->
+        <p></p>
+        <div> 
+            <div>
+                PM：{{PMName}}
+            </div>
+    <!--
+            <div class="padding">
+                {{{PMDetail}}}
+            </div>
+    -->
+        </div>
+        
     </div>
-    <p></p>
-    <div> 
-        <div>
-            PM：
-{{PMName}}
-        </div>
-<!--
-        <div class="padding">
-            {{{PMDetail}}}
-        </div>
--->
-    </div>
+    
 </div>

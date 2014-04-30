@@ -65,13 +65,12 @@ define(function (require, exports, module) {
                 PMName: activity.PMName,
                 PMDetail: activity.PMDetail
             } );
-            
             activityContainer.appendChild(activityDiv);
         } );
-        
-        // 使用js使得时间轴同内容高度相等
-        var timeline = document.getElementsByClassName("timeline")[0];
-        timeline.style.height = activityContainer.scrollHeight - timeline.offsetTop + 'px';
+//        
+//        // 使用js使得时间轴同内容高度相等
+//        var timeline = document.getElementsByClassName("timeline")[0];
+//        timeline.style.height = activityContainer.scrollHeight - timeline.offsetTop + 'px';
     }
     
     function clearTeamContainer() {
