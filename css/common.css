@@ -289,7 +289,7 @@ a {
     font-weight: 600;
     padding-bottom: 20px;
     padding-top: 2px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgb(0, 93, 172);
     word-wrap: break-word;
     word-break: normal;
 }
