@@ -22,6 +22,17 @@
     border-radius: 80px;
 }
 body {
+    
+    /* 自定义 IE 滚动条样式 */
+    scrollbar-base-color: rgb(0, 93, 172);   
+    scrollbar-face-color: rgb(0, 123, 202);   
+    scrollbar-3dlight-color: rgb(0, 93, 172);   
+    scrollbar-highlight-color: rgb(0, 123, 202);   
+    scrollbar-track-color: rgb(0, 93, 172);   
+    scrollbar-arrow-color: #fff;   
+    scrollbar-shadow-color: rgb(0, 123, 202);   
+    scrollbar-dark-shadow-color: rgb(0, 123, 202);  
+    
     background-color: rgb(0, 93, 172);
     font-family: "微软雅黑, Helvetica, Tahoma, Arial, \5b8b\4f53, sans-serif";
     margin: 0;
