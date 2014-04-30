@@ -85,7 +85,7 @@ define(function (require, exports, module) {
             teamContainer = document.getElementById( "team" ),
             displayDiv = document.createElement( "div" ),
             triangleDiv = document.createElement( "div" ),
-            displayContent = "欢迎进入幻实Family！ 我是今天的接待：小林，很高兴能为展示我们团队！ 团队成立于2012" +
+            displayContent = "欢迎进入幻实Family！ 我是今天的接待：anzhihun，很高兴能为展示我们团队！ 团队成立于2012" +
                             "年底，秉承成就幻想，缔造真实的理念，逐步组建成现在的大家庭。家庭成员来自四面八方，" +
                             "不同的专业，不同的学校，但都热衷于技术。更多信息有待你的进一步了解，有什么需要请猛戳我!",
             timer;
