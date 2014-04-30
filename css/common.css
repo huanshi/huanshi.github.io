@@ -23,6 +23,7 @@
 }
 body {
     background-color: rgb(0, 93, 172);
+    font-family: "微软雅黑";
     margin: 0;
     height: 100%;
     width: 100%;
@@ -34,6 +35,8 @@ body {
     margin:0 auto;
     min-width: 900px;
     max-width: 900px;
+    height: 100%;
+    overflow: auto;
 }
 
 .logoImg {
@@ -284,7 +287,6 @@ a {
     margin-top: 10px;
     margin-right: 20px;
     font-weight: 600;
-    font-family: "微软雅黑";
     padding-bottom: 20px;
     padding-top: 2px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
