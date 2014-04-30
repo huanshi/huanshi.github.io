@@ -44,6 +44,7 @@ body {
 }
 
 .bigBox {
+    
     margin:0 auto;
     min-width: 900px;
     max-width: 900px;
@@ -84,8 +85,13 @@ body {
 /* title container */
 
 .titleContainer {
-    position: relative;
+/*    position: relative;*/
     z-index: 1;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 106px;
+    width: 900px;
 }
 .titleContainer .banner {
     position: absolute;
@@ -130,6 +136,9 @@ a {
 
 .contentContainer {
     margin-top: -10px;
+    position: absolute;
+    top: 135px;
+    bottom: 0px;
 }
 
 
@@ -137,13 +146,14 @@ a {
 /* team board style */
 
 .teamcontainer {
-    position: absolute;
+    position: relative;
     background-color: rgb(173, 222, 248);
     width: 590px;
-    height: 86%;
+    height: 100%;
     float: left;
     z-index: 2;
     overflow-y: auto;
+    margin-right: 10px;
 }
 .membertile {
     position: relative;
@@ -261,7 +271,7 @@ a {
     margin-left: 4px;
     background-color: rgb(173, 222, 248);
     width: 300px;
-    height: 86%;
+    height: 100%;
     float: right;
     z-index: 3;
     overflow-x: hidden;
