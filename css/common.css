@@ -24,7 +24,7 @@
 body {
     background-color: rgb(0, 93, 172);
     margin: 0;
-    height: 90%;
+    height: 100%;
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
@@ -232,19 +232,20 @@ a {
 .waiterImg {
     cursor: pointer;
 }
-/* activity board style */
 
+/* activity board style */
 .activityContainer {
     position:relative;
     margin-left: 4px;
     background-color: rgb(173, 222, 248);
     width: 300px;
-    height: 95.5%;
+    height: 86%;
     float: right;
     z-index: 3;
     overflow-x: hidden;
     overflow-y: auto;
 }
+
 .activityContainer .title {
     background-color: rgb(0, 93, 172);
     color: #fff;
@@ -260,12 +261,14 @@ a {
 .activityContainer .timeline {
     position: relative;
     float: left;
-    margin-left: 20px;
-    width: 1px;
-    height: inherit;
-    border: solid 1px;
-    bottom:inherit;
-    margin-bottom:-1000px; padding-bottom:1000px;
+    margin-left: 30px;
+    width: 4px;
+    background-color: rgb(0, 93, 172);
+    height: 100%;
+    border: solid 1px rgb(0, 93, 172);
+    -moz-box-shadow: 0 0 -6px rgba(173, 222, 248, 0.5);
+    -webkit-box-shadow: 0 0 -6px rgba(173, 222, 248, 0.5);
+    box-shadow: 0 0 -6px rgba(173, 222, 248, 0.5);
 }
 
 .activityContainer .activityItem {
@@ -273,29 +276,40 @@ a {
     float: right;
     clear: right;
     width: 200px;
-    background-color: rgb(0, 93, 172);
-    color: #fff;
+    color: rgb(0, 93, 172);
     margin-top: 10px;
+    margin-right: 20px;
     font-weight: 600;
-    padding: 10px;
-    border-left: 4px solid #00FFFF;
+    font-family: "微软雅黑";
+    padding-bottom: 20px;
+    padding-top: 2px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     word-wrap: break-word;
     word-break: normal;
-    margin-bottom:-800px; padding-bottom:800px;
 }
 .activityItem .padding {
     padding: 5px 0px 0px 0px;
 }
 
 .round {
-    background: none repeat scroll 0 0 #FFFFFF;
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-    color: rgb(0, 93, 172);
     position: absolute;
-    top: 20%;
-    left: 5%;
+    top: 15px;
+    left: -62px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    text-align: center; 
+    
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    
+    color: #fff;
+    background-color: rgb(0, 93, 172);
+    -moz-box-shadow: 0 0 -6px rgba(173, 222, 248, 0.5);
+    -webkit-box-shadow: 0 0 -6px rgba(173, 222, 248, 0.5);
+    box-shadow: 0 0 -6px rgba(173, 222, 248, 0.5);
 }i
 
 
