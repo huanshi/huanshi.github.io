@@ -137,11 +137,10 @@ a {
 .contentContainer {
     margin-top: -10px;
     position: absolute;
+    width: 900px;
     top: 135px;
     bottom: 0px;
 }
-
-
 
 /* team board style */
 
@@ -153,7 +152,6 @@ a {
     float: left;
     z-index: 2;
     overflow-y: auto;
-    margin-right: 10px;
 }
 .membertile {
     position: relative;
