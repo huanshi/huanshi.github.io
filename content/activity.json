@@ -1,6 +1,9 @@
 [
     {
-        "dateTime": "2014-03-08",
+        "dateTime": {
+            "time": "03.08",
+            "year": "2014"
+        },
         "AMName": "TDD游戏回顾",
         "AMDetail": "针对上一次团队TDD游戏的进行情况，进行回顾，涉及相互评价，探讨团队协作等问题。",
         "PMName": "结对TDD比赛",
@@ -8,7 +11,10 @@
     },
     
     {
-        "dateTime": "2014-03-15",
+        "dateTime": {
+            "time": "03.15",
+            "year": "2014"
+        },
         "AMName": "《程序员的职业素养》读书学习会",
         "AMDetail": "各抒己见，讨论一下团队成员认可的职业素养，以此为准则。",
         "PMName": "Reversi 演进",
@@ -16,7 +22,10 @@
     },
     
     {
-        "dateTime": "2014-03-22",
+        "dateTime": {
+            "time": "03.22",
+            "year": "2014"
+        },
         "AMName": "来一转正答辩",
         "AMDetail": "所有人都需要参与，并进行评价。",
         "PMName": "AssassinWar实现",
@@ -24,7 +33,10 @@
     },
     
     {
-        "dateTime": "2014-04-12",
+        "dateTime": {
+            "time": "04.12",
+            "year": "2014"
+        },
         "AMName": "CleanCode读书学习",
         "AMDetail": "学习第一章和第二章节内容。",
         "PMName": "Assassin War重构和开发",
@@ -32,7 +44,10 @@
     },
     
     {
-        "dateTime": "2014-04-19",
+        "dateTime": {
+            "time": "04.19",
+            "year": "2014"
+        },  
         "AMName": "CleanCode读书学习-强",
         "AMDetail": "学习第三章函数的内容，由强主讲。函数抽象，命名，代码整理等学习。",
         "PMName": "Assassin War重构和开发",
@@ -40,7 +55,10 @@
     },
     
     {
-        "dateTime": "2014-04-26",
+        "dateTime": {
+            "time": "04.26",
+            "year": "2014"
+        },
         "AMName": "测控相关理论知识学习——Tang",
         "AMDetail": "测控理论知识学习，信号，转换等基本原理",
         "PMName": "CleanCode第四章学习-TyrealGray Assassin War重构和开发",
