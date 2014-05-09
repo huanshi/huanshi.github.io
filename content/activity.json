@@ -63,6 +63,17 @@
         "AMDetail": "测控理论知识学习，信号，转换等基本原理",
         "PMName": "CleanCode第四章学习-TyrealGray Assassin War重构和开发",
         "PMDetail": "CleanCode第四章注释学习，由TyrealGray主讲，之后对AW的main.js代码进行重构。"
+    },
+    
+    {
+        "dateTime": {
+            "time": "05.10",
+            "year": "2014"
+        },
+        "AMName": "黄玉梅转正答辩",
+        "AMDetail": "黄玉梅转正答辩，其他同事不能无故不到！！！",
+        "PMName": "CleanCode第6章学习 Game:AW重构和开发",
+        "PMDetail": "CleanCode第6章对象和数据结构学习，由刘礼主讲，之后对AW的代码进行重构。"
     }
     
 ]
