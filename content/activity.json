@@ -74,6 +74,17 @@
         "AMDetail": "黄玉梅转正答辩，其他同事不能无故不到！！！",
         "PMName": "CleanCode第6章学习 Game:AW重构和开发",
         "PMDetail": "CleanCode第6章对象和数据结构学习，由刘礼主讲，之后对AW的代码进行重构。"
+    },
+    
+    {
+        "dateTime": {
+            "time": "05.17",
+            "year": "2014"
+        },
+        "AMName": "CleanCode学习",
+        "AMDetail": "学习第7,8章，由来一和杨松林分别讲解。",
+        "PMName": "Game:AW重构和开发，新的项目讨论",
+        "PMDetail": "AW的代码进行重构开发。一起讨论来一，刘礼，杨松林开辟新的项目。"
     }
     
 ]
