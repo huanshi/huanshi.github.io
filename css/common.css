@@ -345,3 +345,15 @@ a {
     margin-bottom: 20px;
 }
 
+.popupcontent {
+    position: absolute;
+    top: 20px;
+    /*visibility: hidden;*/
+    overflow: hidden;
+    left: 80px;
+    border:1px solid #CCC;
+    background-color:darkgrey;
+    color: blue;
+    border:1px solid #333;
+    padding:5px;
+}

@@ -1,5 +1,5 @@
 
-/* global define, alert, document, setInterval, clearInterval */
+/* global define, alert, document, setInterval, clearInterval, _ */
 
 define(function (require, exports, module) {
     var membersContent = require( "text!../content/member.json" ),
@@ -21,6 +21,7 @@ define(function (require, exports, module) {
             index = 0,
             memberDiv = null;
         
+        members = _.shuffle(members);
         // create member tile with name
         for ( index = 0; index < members.length; index++ ) {
             memberDiv = document.createElement( "div" );
@@ -48,6 +49,16 @@ define(function (require, exports, module) {
         }
     }
     
+    function getOnClickAMTitleFunc(activity) {
+        
+        return function(event) {
+//            alert(activity.AMDetail);
+            
+            var divObj = document.getElementsByClassName( "popupcontent" )[0];
+            divObj.innerHTML = (activity.AMDetail);
+        };
+    }
+    
     /**
      * render all activities
      */
@@ -66,8 +77,10 @@ define(function (require, exports, module) {
                 PMDetail: activity.PMDetail
             } );
             activityContainer.appendChild(activityDiv);
+            
+            activityDiv.getElementsByClassName("amTitle")[0].addEventListener("click", getOnClickAMTitleFunc(activity));
         } );
-//        
+      
 //        // 使用js使得时间轴同内容高度相等
 //        var timeline = document.getElementsByClassName("timeline")[0];
 //        timeline.style.height = activityContainer.scrollHeight - timeline.offsetTop + 'px';
