@@ -1,0 +1,25 @@
+<h1>该读书雷达由ThoughtWorks公司出品，对我们同样实用，后续根据实际情况再进行调整</h1>
+{{#radar}}
+<div>
+    <h1 style="background-color: #f0f0f0;">{{category}}</h1>
+    {{#detail}}
+    <div>
+        <h2>{{level}}篇</h2>
+        {{#books}}
+        <div style="margin-top: 2em;">
+            <h4>书名: {{name}}</h3>
+<!--            <h4>推荐:{{recommendStart}}</h3>-->
+            <h4>Achieved</h3>
+            {{#achievedPerson}}
+            <div>
+                <span>{{name}}</span>
+                <span>{{datetime}}</span>
+                <span>{{article}}</span>
+            </div>
+            {{/achievedPerson}}
+        </div>
+        {{/books}}
+    </div>
+    {{/detail}}
+</div>
+{{/radar}}

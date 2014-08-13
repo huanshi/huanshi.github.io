@@ -1,15 +1,19 @@
 
-/* global define, alert, document, setInterval, clearInterval, _ */
+/* global define, alert, document, setInterval, clearInterval, _, $ */
 
 define(function (require, exports, module) {
     var membersContent = require( "text!../content/member.json" ),
         members = JSON.parse( membersContent ),
         activityContent = require( "text!../content/activity.json" ),
+        readingRadarContent = require("text!../content/readingRadar.json"),
         activities = JSON.parse( activityContent ),
+        readingRadar = JSON.parse(readingRadarContent),
         Mustache = require("lib/mustache"),
         tileTemplate = require("text!../template/memberTile.html"),
         waiterTemplate = require( "text!../template/waiterThumb.html" ),
         activityTemplate = require( "text!../template/activity.html" ),
+        mainTemplate = require("text!../template/main.html"),
+        readingRadarTemplate = require("text!../template/readingRadar.html"),
         Q = require( "lib/q.min" ),
         waiterDiv = null;
     
@@ -18,8 +22,17 @@ define(function (require, exports, module) {
      */
     function displayAllMember() {
         var teamContainer = document.getElementById( "team" ),
+            tabsNode = document.createElement( "div" ),
+            teamPanel = null,
+            readingRadarPanel = null,
             index = 0,
             memberDiv = null;
+        
+        tabsNode.innerHTML = mainTemplate;
+        teamContainer.appendChild( tabsNode );
+        
+        teamPanel = $(teamContainer).find('#team-panel')[0];
+        readingRadarPanel = $(teamContainer).find('#radar-panel')[0];
         
         members = _.shuffle(members);
         // create member tile with name
@@ -44,9 +57,13 @@ define(function (require, exports, module) {
             } else {
                 memberDiv.getElementsByClassName( "header" )[0].className = "header left";
             }
-
-            teamContainer.appendChild( memberDiv );
+            teamPanel.appendChild( memberDiv );
         }
+        
+        // 添加读书雷达
+        readingRadarPanel.innerHTML = Mustache.render(readingRadarTemplate, {'radar': readingRadar});
+
+        $(document).foundation();
     }
     
     function getOnClickAMTitleFunc(activity) {

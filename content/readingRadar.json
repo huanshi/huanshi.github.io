@@ -1,0 +1,610 @@
+[
+    {
+        "category": "Coding Practice | 编程实践",
+        "detail": [
+            {
+                "level": "基础",
+                "books": [
+                    {
+                        "name": "Clean Code《代码整洁之道》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Pragmatic Unit Testing《单元测试之道》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "The Productive Programmer《卓有成效的程序员》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Test-Driven Development By Example《测试驱动开发》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Clean Coder《程序员的职业修养》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "The Art of Readable Code《编写可读代码的艺术》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            
+            {
+                "level": "进阶",
+                "books": [
+                    {
+                        "name": "Refactoring To Patterns《重构与模式》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Implementation Patterns《实现模式》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Code Complete《代码大全》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "The Pragmatic Programmer《程序员修炼之道》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            
+            {
+                "level": "高级",
+                "books": [
+                    {
+                        "name": "Structure and Interpretation of Computer Programs《计算机程序的构造和解释》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Working Effectively with Legacy Code《修改代码的艺术》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    
+    {
+        "category": "Architecture & Design | 架构与设计",
+        "detail": [
+            {
+                "level": "基础",
+                "books": [
+                    {
+                        "name": "Agile Software Development 《敏捷软件开发：原则、实践与模式》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Head First Design Patterns《深入浅出设计模式》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Design Patterns 《设计模式》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            
+            {
+                "level": "进阶",
+                "books": [
+                    {
+                        "name": "The Art of UNIX Programming 《Unix编程艺术》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Practical API Design 《框架设计的艺术》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Domain Specific Languages 《领域特定语言》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Patterns of Enterprise Application Architecture 《企业应用架构模式》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            
+            {
+                "level": "高级",
+                "books": [
+                    {
+                        "name": "Release It ",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Domain-Driven Design 《领域驱动设计》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Enterprise Integration Patterns《企业集成模式》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Beautiful Architecture《架构之美》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Pattern-Oriented Software Architecture《面向模式的软件架构》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    
+    {
+        "category": "Methodology | 方法学",
+        "detail": [
+            {
+                "level": "基础",
+                "books": [
+                    {
+                        "name": "User Stories Applied《用户故事与敏捷方法》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "The Gold Mine《金矿》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Scrum and XP From the Trenches《硝烟中的Scrum和XP》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Continuous Integration《持续集成》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Extreme Programming Explained《解析极限编程》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            
+            {
+                "level": "进阶",
+                "books": [
+                    {
+                        "name": "Lean Thinking《精益思想》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Continuous Delivery《持续交付》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "How Google Tests Software",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Agile Testing",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Extreme Programming Refactored《重构极限编程》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            
+            {
+                "level": "高级",
+                "books": [
+                    {
+                        "name": "Specification By Example",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    
+    {
+        "category": "Thought & Leadership | 思想与领导力",
+        "detail": [
+            {
+                "level": "基础",
+                "books": [
+                    {
+                        "name": "The Effective Executive《卓有成效的管理者》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Are Your Lights On?《你的灯亮着吗》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Becoming A Technical Leader《成为技术领导者》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            
+            {
+                "level": "进阶",
+                "books": [
+                    {
+                        "name": "The Fifth Discipline《第五项修炼》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "The Design Of Business",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Management 3.0《管理3.0：培养和提升敏捷领导力》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "Presentation To Win",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    },
+                    
+                    {
+                        "name": "The McKinsey Way《麦肯锡方法》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            
+            {
+                "level": "高级",
+                "books": [
+                    {
+                        "name": "Thinking, Fast and Slow《思考快与慢》",
+                        "recommendStart":"3",
+                        "achievedPerson":[
+                            {
+                                "name": "",
+                                "datetime": "",
+                                "article": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+   
+]
