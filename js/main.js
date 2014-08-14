@@ -15,6 +15,7 @@ define(function (require, exports, module) {
         mainTemplate = require("text!../template/main.html"),
         readingRadarTemplate = require("text!../template/readingRadar.html"),
         languagePanelTemplate = require("text!../template/languagePanel.html"),
+        requirementPanelTemplate = require("text!../template/requirementPanel.html"),
         Q = require( "lib/q.min" ),
         waiterDiv = null;
     
@@ -27,6 +28,7 @@ define(function (require, exports, module) {
             teamPanel = null,
             readingRadarPanel = null,
             languagePanel = null,
+            requirementPanel = null,
             index = 0,
             memberDiv = null;
         
@@ -36,6 +38,7 @@ define(function (require, exports, module) {
         teamPanel = $(teamContainer).find('#team-panel')[0];
         readingRadarPanel = $(teamContainer).find('#radar-panel')[0];
         languagePanel = $(teamContainer).find('#language-panel')[0];
+        requirementPanel = $(teamContainer).find('#requirement-panel')[0];
         
         members = _.shuffle(members);
         // create member tile with name
@@ -66,6 +69,7 @@ define(function (require, exports, module) {
         // 添加读书雷达
         readingRadarPanel.innerHTML = Mustache.render(readingRadarTemplate, {'radar': readingRadar});
         languagePanel.innerHTML = languagePanelTemplate;
+        requirementPanel.innerHTML = requirementPanelTemplate;
         $(document).foundation();
     }
     
